@@ -1,0 +1,63 @@
+@import '~bootstrap/scss/bootstrap';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100vw;
+  height: 183px;
+  background-color: #11992e;
+  backface-visibility: visible;
+  position: fixed;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  gap: 20px;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #3c3d3d;
+  backface-visibility: visible;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color:#fff;
+  gap: 20px;
+  .footer__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer__text,
+  .footer__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-form-item .ant-form-item-label > label {
+  color: #fff;
+}
+
+

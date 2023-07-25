@@ -42,37 +42,37 @@ const Navbar = () => {
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-item">
-            <a href="#home" className="nav-link">
+            <a href="#home" className="nav-link underline-link">
               Grupos
             </a>
           </li>
           <li className="nav-item">
-            <a href="#about" className="nav-link">
+            <a href="#about" className="nav-link underline-link">
               Sacramentos
             </a>
           </li>
           <li className="nav-item">
-            <a href="#services" className="nav-link">
+            <a href="#services" className="nav-link underline-link">
               Servicios
             </a>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link">
+            <a href="#contact" className="nav-link underline-link">
               Recursos
             </a>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link">
+            <a href="#contact" className="nav-link underline-link">
               Galería
             </a>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link">
+            <a href="#contact" className="nav-link underline-link">
               Donaciones
             </a>
           </li>
           <li>
-            <a href="#contact" className="nav-link">
+            <a href="#contact" className="nav-link underline-link">
               Contáctanos
             </a>
           </li>

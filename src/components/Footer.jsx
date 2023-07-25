@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/images/Logo-SJT-BN.png';
+import Logo from "../assets/images/Logo-SJT-BN.png";
 import LocationOn from '../assets/icons/LocationOn.svg';
 import { PhoneOutlined, MailOutlined, ClockCircleOutlined } from '@ant-design/icons';
 import ContactForm from './ContactForm';
@@ -27,10 +27,13 @@ function Footer() {
         />
       </article>
       <article className="footer__article">
+        <h3 className="footer__title">
+          Escríbenos tus inquietudes o comentarios.
+        </h3>
         <ContactForm />
       </article>
       <article className="footer__article contact">
-        <img src={Logo} alt="Logo" style={{ width: "300px" }} />
+        <img src={Logo} alt="logo" style={{ width: "300px" }} />
         <h3 className="footer__title">Contacto</h3>
         <p className="footer__text">
           <PhoneOutlined />

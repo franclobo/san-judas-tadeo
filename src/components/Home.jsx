@@ -11,7 +11,7 @@ function Home() {
           <table className="table table-striped table-bordered table-hover">
             <thead className="info__thead">
               <tr>
-                <th>Día</th>
+                <th></th>
                 <th>Jueves</th>
                 <th>Viernes</th>
                 <th>Sábado</th>

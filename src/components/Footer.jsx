@@ -27,10 +27,10 @@ function Footer() {
         />
       </article>
       <article className="footer__article">
-        <img src={Logo} alt="Logo" style={{ width: "300px" }} />
         <ContactForm />
       </article>
       <article className="footer__article contact">
+        <img src={Logo} alt="Logo" style={{ width: "300px" }} />
         <h3 className="footer__title">Contacto</h3>
         <p className="footer__text">
           <PhoneOutlined />

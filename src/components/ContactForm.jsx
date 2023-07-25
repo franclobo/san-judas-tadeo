@@ -125,7 +125,7 @@ const ContactForm = () => {
           },
         ]}
       >
-        <Input.TextArea placeholder="Hola, me gustaría colaborar con el proyecto..." />
+        <Input.TextArea placeholder="¿Deseas anotar las intenciones para la misa?" />
       </Form.Item>
       <Form.Item
         wrapperCol={{
@@ -133,7 +133,7 @@ const ContactForm = () => {
           offset: 8,
         }}
       >
-        <Button type="primary" htmlType="submit">
+        <Button type="primary" htmlType="submit" className="form__button">
           Enviar
         </Button>
       </Form.Item>

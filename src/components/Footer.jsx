@@ -20,9 +20,9 @@ function Footer() {
           width="250"
           height="250"
           style={{ border: "0" }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           title="Parroquia San Judas Tadeo"
         />
       </article>

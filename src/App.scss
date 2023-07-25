@@ -82,9 +82,11 @@
   }
 }
 
-:where(.css-dev-only-do-not-override-1jr9qlj).ant-form-item .ant-form-item-label > label {
-  color: #fff;
-  width: 20vw;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__button {

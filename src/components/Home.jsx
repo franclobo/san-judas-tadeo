@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import UncontrolledExample from './Carousell.jsx';
 import Horario from '../assets/icons/horario.png';
 import Servicios from '../assets/icons/servicios-religiosos.png';
+import TextExample from './Cards.jsx';
+import DividerSection from './Divider.jsx';
 
 function Home() {
   return (
@@ -24,6 +26,9 @@ function Home() {
           </li>
         </ul>
       </section>
+      <TextExample />
+      <DividerSection />
+
     </div>
   );
 }

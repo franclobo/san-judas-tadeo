@@ -1,6 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import Roldós from "../assets/images/Roldós.jpg";
 import Concejo from "../assets/images/Concejo.jpg";
+import Velasco from "../assets/images/San Antonio de Padua.jpeg";
 
 function UncontrolledExample() {
   return (
@@ -44,7 +45,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={Roldós}
+          src={Velasco}
           alt="Fourth slide"
           style={{ height: "500px" }}
         />

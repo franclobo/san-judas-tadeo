@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import ServiciosReligiosos from '../assets/images/servicios religiosos.png';
 
 function Servicios() {
   return (
     <div>
+      <img src={ServiciosReligiosos} alt="Servicios Religiosos" className="info__img" />
       <article className="info__article">
         <h2 className="info__title">Servicios Religiosos</h2>
         <ul>

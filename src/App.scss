@@ -17,7 +17,7 @@
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
   width: 100%;
@@ -25,6 +25,10 @@
   margin: 0 20px;
   color: #fff;
   transition: width 0.3s, height 0.3s;
+}
+
+.nav-item {
+  position: relative;
 }
 
 .underline-link {
@@ -48,6 +52,69 @@
 .underline-link:hover:before {
   left: 0;
   width: 100%;
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+  /* ... (existing styles) */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a box shadow for a nice effect */
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+  margin: 0;
+  padding: 5px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: #11992e;
+  /* Green color for the links */
+  font-weight: bold;
+}
+
+/* Add hover styles for the links in the dropdown */
+.dropdown-item:hover {
+  background-color: #ccc;
+  /* Gray background when hovering */
+  .dropdown-link {
+    color: #fff;
+  }
+  /* White text color when hovering */
+}
+
+/* Add the green bar on the left side of the submenu */
+.dropdown-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 5px;
+  height: 100%;
+  background-color: #11992e;
+}
+
+/* Styles for the Search icon */
+.nav-link:last-child {
+  position: relative;
+}
+
+.nav-link:last-child .anticon {
+  position: absolute;
+  right: 0;
 }
 
 .footer {
@@ -95,44 +162,89 @@
 
 .info {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  .info__article{
-    .info__title {
-      font-size: 30px;
-      font-weight: 700;
-      color: #cf1616;
-      text-align: center;
-    }
-    .table {
-      width: 50vw;
-      .info__thead,
-      .info__tbody {
-        text-align: center;
-      }
-    }
-    ul {
-      list-style: none;
+  margin: 50px 0;
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    .icons__item {
+      display:flex;
       flex-direction: column;
-      display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      gap: 20px;
-      li {
+      text-decoration: none;
+      .icons__link {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        strong {
+        color: #3c3d3d;
+        font-size: 30px;
+        text-decoration: none;
+        transition: all 0.3s;
+        .icons__img {
+          width: 150px;
+          height: 150px;
+        }
+        .icons__txt {
           font-size: 20px;
           font-weight: 700;
-          color: #1a1a1a;
         }
       }
     }
   }
 }
+
+.info__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .info__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3c3d3d;
+    text-align: center;
+  }
+
+  .table {
+    width: 50vw;
+
+    .info__thead,
+    .info__tbody {
+      text-align: center;
+    }
+  }
+
+  ul {
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+
+      strong {
+        font-size: 20px;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+    }
+  }
+}
+
 

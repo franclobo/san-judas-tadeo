@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import './App.scss';
 import Footer from './components/Footer';
+import Horarios from './components/Horarios';
+import Servicios from './components/Servicios';
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<h1>About</h1>} />
+          <Route path="horarios" element={<Horarios />} />
+          <Route path="servicios" element={<Servicios />} />
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
         <Footer />

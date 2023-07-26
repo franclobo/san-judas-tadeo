@@ -1,12 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { Alert, Space } from "antd";
 
 const ContactForm = () => {
   const form = useRef();
+  const [showAlert, setShowAlert] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,6 +23,11 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setShowAlert(true);
+          setTimeout(() => {
+            setShowAlert(false);
+          }, 5000);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -37,7 +44,7 @@ const ContactForm = () => {
   });
 
   return (
-    <form ref={form} className="contact-form" onSubmit={sendEmail}>
+    <form ref={form} className="contact-form" onSubmit={sendEmail} id="contact">
       <Box
         component="div"
         sx={{
@@ -116,6 +123,22 @@ const ContactForm = () => {
             placeholder="Mensaje..."
             name="message"
           />
+          <Space
+            direction="vertical"
+            style={{
+              width: "100%",
+            }}
+          >
+            {showAlert && (
+              <Alert
+                message="Éxito"
+                description="El mensaje ha llegado a su destino."
+                type="success"
+                showIcon
+                afterClose={() => setShowAlert(false)}
+              />
+            )}
+          </Space>
           <ThemeProvider theme={theme}>
             <Button variant="contained" type="submit" color="primary">
               Enviar

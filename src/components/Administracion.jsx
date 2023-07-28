@@ -1,7 +1,7 @@
 import React from 'react';
 import UnderConstruction from "../assets/icons/Under-Construction-Sign.png";
 
-function NuestraSeñora() {
+function Administracion() {
   return (
     <div>
       <img src={UnderConstruction} alt="En construcción" />
@@ -9,4 +9,4 @@ function NuestraSeñora() {
   )
 }
 
-export default NuestraSeñora
+export default Administracion

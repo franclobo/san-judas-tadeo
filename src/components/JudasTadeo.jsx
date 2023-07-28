@@ -1,7 +1,7 @@
 import React from 'react';
 import UnderConstruction from "../assets/icons/Under-Construction-Sign.png";
 
-function Asociaciones() {
+function JudasTadeo() {
   return (
     <div>
       <img src={UnderConstruction} alt="En construcción" />
@@ -9,4 +9,4 @@ function Asociaciones() {
   )
 }
 
-export default Asociaciones
+export default JudasTadeo

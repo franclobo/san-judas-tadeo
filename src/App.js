@@ -12,8 +12,8 @@ import Actividades from './components/Actividades';
 import Historia from './components/Historia';
 import NuestroParroco from './components/NuestroParroco';
 import Templo from './components/Templo';
-import Asociaciones from './components/Asociaciones';
-import NuestraSeñora from './components/NuestraSeñora';
+import Administracion from './components/Administracion';
+import JudasTadeo from './components/JudasTadeo';
 import Niños from './components/Niños';
 import Jovenes from './components/Jovenes';
 import Adultos from './components/Adultos';
@@ -34,8 +34,8 @@ function App() {
           <Route path="historia" element={<Historia />} />
           <Route path="nuestro-parroco" element={<NuestroParroco />} />
           <Route path="templo" element={<Templo />} />
-          <Route path="asociaciones" element={<Asociaciones />} />
-          <Route path="nuestra-señora" element={<NuestraSeñora />} />
+          <Route path="administracion" element={<Administracion />} />
+          <Route path="nuestra-señora" element={<JudasTadeo />} />
           <Route path="niños" element={<Niños />} />
           <Route path="jovenes" element={<Jovenes />} />
           <Route path="adultos" element={<Adultos />} />

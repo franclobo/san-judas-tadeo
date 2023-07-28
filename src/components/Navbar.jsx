@@ -33,6 +33,7 @@ const Navbar = () => {
     conocenos: false,
     groups: false,
     sacramentos: false,
+    catequesis: false,
     servicios: false,
     recursos: false,
     galeria: false,
@@ -91,6 +92,14 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
+                      to="/administaracion"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Administración
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
                       to="/templo"
                       className="dropdown-link underline-link-item"
                     >
@@ -99,18 +108,10 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
-                      to="/asociaciones"
+                      to="/judas-tadeo"
                       className="dropdown-link underline-link-item"
                     >
-                      Asociaciones
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/nuestra-senora"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Imagen de Nuestra Señora de la Misericordia
+                      Imagen de San Judas Tadeo
                     </Link>
                   </li>
                 </ul>
@@ -187,22 +188,6 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
-                      to="/eucaristia"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Eucaristia
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/confirmacion"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Confirmación
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
                       to="/matrimonio"
                       className="dropdown-link underline-link-item"
                     >
@@ -235,10 +220,18 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
+                      to="/capilla"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Capillas
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
                       to="/misas"
                       className="dropdown-link underline-link-item"
                     >
-                      Misas
+                      Santa Misa
                     </Link>
                   </li>
                   <li className="dropdown-item">
@@ -247,6 +240,86 @@ const Navbar = () => {
                       className="dropdown-link underline-link-item"
                     >
                       Santísimo
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </li>
+          <li
+            className="nav-item"
+            onMouseEnter={() => handleHover("catequesis", true)}
+            onMouseLeave={() => handleHover("catequesis", false)}
+          >
+            <Link to="/bautismo" className="nav-link underline-link">
+              Catequesis
+            </Link>
+            {isDropdownOpen.catequesis && (
+              <div className="dropdown-content">
+                {/* Place the sub-menu items or additional links here */}
+                <ul className="dropdown-list">
+                  <li className="dropdown-item">
+                    <Link
+                      to="/iniciacion"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Iniciación
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
+                      to="/reconciliacion"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Reconciliación
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
+                      to="/eucaristia"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Eucaristia
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
+                      to="/año-biblico"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Año Bíblico
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
+                      to="/primero-confirmacion"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Primero de Confirmación
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
+                      to="/segundo-confirmacion"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Segundo de Confirmación
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
+                      to="/grupo-jovenes"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Grupo de jóvenes
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
+                      to="/grupo-adultos"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Grupo Adultos
                     </Link>
                   </li>
                 </ul>
@@ -267,6 +340,14 @@ const Navbar = () => {
                 <ul className="dropdown-list">
                   <li className="dropdown-item">
                     <Link
+                      to="/rosario"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Rosario y oraciones
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
                       to="/via-crucis"
                       className="dropdown-link underline-link-item"
                     >
@@ -278,7 +359,15 @@ const Navbar = () => {
                       to="/lecturas"
                       className="dropdown-link underline-link-item"
                     >
-                      Lecturas de la semana
+                      Pan de la Palabra
+                    </Link>
+                  </li>
+                  <li className="dropdown-item">
+                    <Link
+                      to="/novena-sjt"
+                      className="dropdown-link underline-link-item"
+                    >
+                      Novena de San Judas Tadeo
                     </Link>
                   </li>
                   <li className="dropdown-item">

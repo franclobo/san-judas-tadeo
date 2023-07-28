@@ -66,7 +66,7 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("conocenos", true)}
             onMouseLeave={() => handleHover("conocenos", false)}
           >
-            <Link to="/historia" className="nav-link">
+            <Link to="/historia" className="nav-link underline-link">
               Conócenos
             </Link>
             {isDropdownOpen.conocenos && (
@@ -122,7 +122,7 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("groups", true)}
             onMouseLeave={() => handleHover("groups", false)}
           >
-            <Link to="/niños" className="nav-link">
+            <Link to="/niños" className="nav-link underline-link">
               Grupos
             </Link>
             {isDropdownOpen.groups && (
@@ -162,10 +162,7 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("sacramentos", true)}
             onMouseLeave={() => handleHover("sacramentos", false)}
           >
-            <Link
-              to="/bautismo"
-              className="nav-link"
-            >
+            <Link to="/bautismo" className="nav-link underline-link">
               Sacramentos
             </Link>
             {isDropdownOpen.sacramentos && (
@@ -221,10 +218,7 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("servicios", true)}
             onMouseLeave={() => handleHover("servicios", false)}
           >
-            <Link
-              to="/despacho-parroquial"
-              className="nav-link"
-            >
+            <Link to="/despacho-parroquial" className="nav-link underline-link">
               Servicios
             </Link>
             {isDropdownOpen.servicios && (
@@ -264,10 +258,7 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("recursos", true)}
             onMouseLeave={() => handleHover("recursos", false)}
           >
-            <Link
-              to="/via-crucis"
-              className="nav-link"
-            >
+            <Link to="/via-crucis" className="nav-link underline-link">
               Recursos
             </Link>
             {isDropdownOpen.recursos && (
@@ -307,10 +298,7 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("galeria", true)}
             onMouseLeave={() => handleHover("galeria", false)}
           >
-            <Link
-              to="/fotos"
-              className="nav-link"
-            >
+            <Link to="/fotos" className="nav-link underline-link">
               Galería
             </Link>
             {isDropdownOpen.galeria && (
@@ -342,10 +330,7 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("donaciones", true)}
             onMouseLeave={() => handleHover("donaciones", false)}
           >
-            <Link
-              to="/donaciones"
-              className="nav-link"
-            >
+            <Link to="/donaciones" className="nav-link underline-link">
               Donaciones
             </Link>
           </li>
@@ -357,7 +342,7 @@ const Navbar = () => {
           <li>
             <a
               href="https://www.facebook.com/profile.php?id=100064395382823&mibextid=ZbWKwL"
-              className="nav-link underline-link"
+              className="nav-link"
             >
               <BsFacebook />
             </a>

@@ -31,6 +31,12 @@ function Footer() {
           Escríbenos tus inquietudes o comentarios.
         </h3>
         <ContactForm />
+        <small className="autor">
+          Desarrollado por{" "}
+          <a href="https://www.linkedin.com/in/francisco-borja-lobato/">
+            Ing. Francisco Borja &copy;
+          </a>
+        </small>
       </article>
       <article className="footer__article contact">
         <img src={Logo} alt="logo" style={{ width: "300px" }} />

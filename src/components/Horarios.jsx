@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Misa from '../assets/images/misa.jpg';
 
 function Horarios() {
   return (
     <div>
+      <img src={Misa} alt="Misa" style={{ width: '100%', height: '500px', marginBottom: '20px' }} />
       <article className="info__article">
         <h2 className="info__title">Misas Dominicales</h2>
         <table className="table table-striped table-bordered table-hover">

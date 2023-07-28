@@ -21,7 +21,7 @@ const TextExample = () => (
       </div>
       <div className="horarios__content">
         <p>
-          <strong>Miercoles a Sábado: </strong> 15:00 a 18:30
+          <strong>Miercoles a Sábado: </strong> <br /> 15:00 a 18:30
         </p>
       </div>
     </div>

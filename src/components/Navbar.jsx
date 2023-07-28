@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/SJT-BN.png';
-import { SearchOutlined } from '@ant-design/icons';
+import { BsFacebook } from 'react-icons/bs';
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -67,7 +67,7 @@ const Navbar = () => {
             onMouseLeave={() => handleHover("conocenos", false)}
           >
             <a href="#home" className="nav-link underline-link">
-              Conocenos
+              Conócenos
             </a>
             {isDropdownOpen.conocenos && (
               <div className="dropdown-content">
@@ -340,7 +340,12 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <SearchOutlined />
+            <a
+              href="https://www.facebook.com/profile.php?id=100064395382823&mibextid=ZbWKwL"
+              className="nav-link underline-link"
+            >
+              <BsFacebook />
+            </a>
           </li>
         </ul>
       </nav>

@@ -1,4 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
+@font-face {
+  font-family: 'Borel';
+  src: url(./assets/fonts/Borel/Borel-Regular.ttf);
+  font-family: 'Lato';
+  src: url(./assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
 
 .header {
   display: flex;
@@ -29,6 +40,7 @@
 
 .nav-item {
   position: relative;
+  font-size: 18px;
 }
 
 .underline-link {
@@ -100,6 +112,7 @@
   margin: 0;
   padding: 5px 0;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 18px;
 }
 
 .dropdown-item:hover {
@@ -180,16 +193,14 @@
 
 .info {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 20px;
   margin: 50px 0;
   .icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    justify-content: space-around;
     list-style: none;
+    width: 100%;
     .icons__item {
       display:flex;
       flex-direction: column;
@@ -338,15 +349,123 @@
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
 
-    .noticias__item {
+    .item_1 {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-decoration: none;
+      height: 200px;
       gap: 20px;
+      margin: 20px;
+      position: relative;
+      &::before {
+        /* This pseudo-element will act as an overlay for the background image */
+          content: "";
+          background-image: url(./assets/images/homilia.jpg);
+          background-size: cover;
+          opacity: 0.7;
+          border-radius: 20px;
+          /* Set the desired opacity for the background image */
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+      }
+    }
+  .item_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 200px;
+    gap: 20px;
+    margin: 20px;
+    position: relative;
+    &::before {
+      /* This pseudo-element will act as an overlay for the background image */
+      content: "";
+      background-image: url(./assets/images/lecturas.jpg);
+      background-size: cover;
+      opacity: 0.7;
+      border-radius: 20px;
+      /* Set the desired opacity for the background image */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+    .item_3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 200px;
+      gap: 20px;
+      margin: 20px;
+      position: relative;
+      &::before {
+        /* This pseudo-element will act as an overlay for the background image */
+        content: "";
+        background-image: url(./assets/images/actividades.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.7;
+        border-radius: 20px;
+        /* Set the desired opacity for the background image */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
     }
   }
 }
 
+.noticias__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  .noticias__txt {
+    font-family: 'Borel', serif;
+    &::shadow {
+      text-shadow: 2px 2px 2px #000;
+    }
+  }
+}
+
+.recomendados__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  .recomendados__item {
+    text-decoration: none;
+    background-color: aqua;
+    border-radius: 100%;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    &:hover {
+      background-color: #11992e;
+      transform: scale(0.8);
+    }
+    .recomendados__img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
 

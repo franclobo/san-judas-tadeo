@@ -5,6 +5,7 @@ import Horario from '../assets/icons/horario.png';
 import Servicios from '../assets/icons/servicios-religiosos.png';
 import TextExample from './Cards.jsx';
 import DividerSection from './Divider.jsx';
+import Recomendados from './Recomendados.jsx';
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
       </section>
       <TextExample />
       <DividerSection />
+      <Recomendados />
 
     </div>
   );

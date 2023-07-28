@@ -66,52 +66,52 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("conocenos", true)}
             onMouseLeave={() => handleHover("conocenos", false)}
           >
-            <a href="#home" className="nav-link underline-link">
+            <Link to="/historia" className="nav-link">
               Conócenos
-            </a>
+            </Link>
             {isDropdownOpen.conocenos && (
               <div className="dropdown-content">
                 {/* Place the sub-menu items or additional links here */}
                 <ul className="dropdown-list">
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/historia"
                       className="dropdown-link underline-link-item"
                     >
                       Historia
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/nuestro-parroco"
                       className="dropdown-link underline-link-item"
                     >
                       Nuestro párroco
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/templo"
                       className="dropdown-link underline-link-item"
                     >
                       Ambientes del templo
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/asociaciones"
                       className="dropdown-link underline-link-item"
                     >
                       Asociaciones
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/nuestra-senora"
                       className="dropdown-link underline-link-item"
                     >
                       Imagen de Nuestra Señora de la Misericordia
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -122,36 +122,36 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("groups", true)}
             onMouseLeave={() => handleHover("groups", false)}
           >
-            <a href="#home" className="nav-link underline-link">
+            <Link to="/niños" className="nav-link">
               Grupos
-            </a>
+            </Link>
             {isDropdownOpen.groups && (
               <div className="dropdown-content">
                 {/* Place the sub-menu items or additional links here */}
                 <ul className="dropdown-list">
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/niños"
                       className="dropdown-link underline-link-item"
                     >
                       Niños
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/jovenes"
                       className="dropdown-link underline-link-item"
                     >
                       Jóvenes
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/adultos"
                       className="dropdown-link underline-link-item"
                     >
                       Adultos y Familias
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -162,52 +162,55 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("sacramentos", true)}
             onMouseLeave={() => handleHover("sacramentos", false)}
           >
-            <a href="#about" className="nav-link underline-link">
+            <Link
+              to="/bautismo"
+              className="nav-link"
+            >
               Sacramentos
-            </a>
+            </Link>
             {isDropdownOpen.sacramentos && (
               <div className="dropdown-content">
                 {/* Place the sub-menu items or additional links here */}
                 <ul className="dropdown-list">
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/bautismo"
                       className="dropdown-link underline-link-item"
                     >
                       Bautismo
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/reconciliacion"
                       className="dropdown-link underline-link-item"
                     >
                       Reconciliación
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/eucaristia"
                       className="dropdown-link underline-link-item"
                     >
                       Eucaristia
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/confirmacion"
                       className="dropdown-link underline-link-item"
                     >
                       Confirmación
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/matrimonio"
                       className="dropdown-link underline-link-item"
                     >
                       Matrimonio
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -218,36 +221,39 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("servicios", true)}
             onMouseLeave={() => handleHover("servicios", false)}
           >
-            <a href="#services" className="nav-link underline-link">
+            <Link
+              to="/despacho-parroquial"
+              className="nav-link"
+            >
               Servicios
-            </a>
+            </Link>
             {isDropdownOpen.servicios && (
               <div className="dropdown-content">
                 {/* Place the sub-menu items or additional links here */}
                 <ul className="dropdown-list">
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/despacho-parroquial"
                       className="dropdown-link underline-link-item"
                     >
                       Despacho Parroquial
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/misas"
                       className="dropdown-link underline-link-item"
                     >
                       Misas
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/santisimo"
                       className="dropdown-link underline-link-item"
                     >
                       Santísimo
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -258,36 +264,39 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("recursos", true)}
             onMouseLeave={() => handleHover("recursos", false)}
           >
-            <a href="#contact" className="nav-link underline-link">
+            <Link
+              to="/via-crucis"
+              className="nav-link"
+            >
               Recursos
-            </a>
+            </Link>
             {isDropdownOpen.recursos && (
               <div className="dropdown-content">
                 {/* Place the sub-menu items or additional links here */}
                 <ul className="dropdown-list">
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/via-crucis"
                       className="dropdown-link underline-link-item"
                     >
                       Vía crucis
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/lecturas"
                       className="dropdown-link underline-link-item"
                     >
                       Lecturas de la semana
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/novena-navidad"
                       className="dropdown-link underline-link-item"
                     >
                       Novena de Navidad
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -298,28 +307,31 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("galeria", true)}
             onMouseLeave={() => handleHover("galeria", false)}
           >
-            <a href="#contact" className="nav-link underline-link">
+            <Link
+              to="/fotos"
+              className="nav-link"
+            >
               Galería
-            </a>
+            </Link>
             {isDropdownOpen.galeria && (
               <div className="dropdown-content">
                 {/* Place the sub-menu items or additional links here */}
                 <ul className="dropdown-list">
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/fotos"
                       className="dropdown-link underline-link-item"
                     >
                       Fotos
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-item">
-                    <a
-                      href="#home"
+                    <Link
+                      to="/videos"
                       className="dropdown-link underline-link-item"
                     >
                       Videos
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -330,9 +342,12 @@ const Navbar = () => {
             onMouseEnter={() => handleHover("donaciones", true)}
             onMouseLeave={() => handleHover("donaciones", false)}
           >
-            <a href="#contact" className="nav-link underline-link">
+            <Link
+              to="/donaciones"
+              className="nav-link"
+            >
               Donaciones
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#contact" className="nav-link underline-link">

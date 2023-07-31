@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/SJT-BN.png';
 import { BsFacebook } from 'react-icons/bs';
+import { debounce } from "lodash";
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -41,10 +42,20 @@ const Navbar = () => {
     contactanos: false,
   });
 
-  // Function to handle hover events
-  const handleHover = (item, isHovering) => {
-    setIsDropdownOpen((prevState) => ({ ...prevState, [item]: isHovering }));
-  };
+ const handleHover = (item, isHovering) => {
+   setIsDropdownOpen((prevState) => ({ ...prevState, [item]: isHovering }));
+
+   // Close all other menus when mouse enters a new item
+   if (isHovering) {
+     Object.keys(isDropdownOpen).forEach((key) => {
+       if (key !== item) {
+         setIsDropdownOpen((prevState) => ({ ...prevState, [key]: false }));
+       }
+     });
+   }
+ };
+
+  const debouncedHandleHover = debounce(handleHover, 60);
 
   return (
     <header
@@ -64,8 +75,8 @@ const Navbar = () => {
         <ul className="nav-list">
           <li
             className="nav-item"
-            onMouseEnter={() => handleHover("conocenos", true)}
-            onMouseLeave={() => handleHover("conocenos", false)}
+            onMouseEnter={() => debouncedHandleHover("conocenos", true)}
+            onMouseLeave={() => debouncedHandleHover("conocenos", false)}
           >
             <Link to="/historia" className="nav-link underline-link">
               Conócenos
@@ -120,8 +131,8 @@ const Navbar = () => {
           </li>
           <li
             className="nav-item"
-            onMouseEnter={() => handleHover("groups", true)}
-            onMouseLeave={() => handleHover("groups", false)}
+            onMouseEnter={() => debouncedHandleHover("groups", true)}
+            onMouseLeave={() => debouncedHandleHover("groups", false)}
           >
             <Link to="/niños" className="nav-link underline-link">
               Grupos
@@ -160,8 +171,8 @@ const Navbar = () => {
           </li>
           <li
             className="nav-item"
-            onMouseEnter={() => handleHover("sacramentos", true)}
-            onMouseLeave={() => handleHover("sacramentos", false)}
+            onMouseEnter={() => debouncedHandleHover("sacramentos", true)}
+            onMouseLeave={() => debouncedHandleHover("sacramentos", false)}
           >
             <Link to="/bautismo" className="nav-link underline-link">
               Sacramentos
@@ -200,8 +211,8 @@ const Navbar = () => {
           </li>
           <li
             className="nav-item"
-            onMouseEnter={() => handleHover("servicios", true)}
-            onMouseLeave={() => handleHover("servicios", false)}
+            onMouseEnter={() => debouncedHandleHover("servicios", true)}
+            onMouseLeave={() => debouncedHandleHover("servicios", false)}
           >
             <Link to="/despacho-parroquial" className="nav-link underline-link">
               Servicios
@@ -248,88 +259,17 @@ const Navbar = () => {
           </li>
           <li
             className="nav-item"
-            onMouseEnter={() => handleHover("catequesis", true)}
-            onMouseLeave={() => handleHover("catequesis", false)}
+            onMouseEnter={() => debouncedHandleHover("catequesis", true)}
+            onMouseLeave={() => debouncedHandleHover("catequesis", false)}
           >
-            <Link to="/bautismo" className="nav-link underline-link">
+            <Link to="/catequesis" className="nav-link underline-link">
               Catequesis
             </Link>
-            {isDropdownOpen.catequesis && (
-              <div className="dropdown-content">
-                {/* Place the sub-menu items or additional links here */}
-                <ul className="dropdown-list">
-                  <li className="dropdown-item">
-                    <Link
-                      to="/iniciacion"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Iniciación
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/reconciliacion"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Reconciliación
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/eucaristia"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Eucaristia
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/año-biblico"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Año Bíblico
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/primero-confirmacion"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Primero de Confirmación
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/segundo-confirmacion"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Segundo de Confirmación
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/grupo-jovenes"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Grupo de jóvenes
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link
-                      to="/grupo-adultos"
-                      className="dropdown-link underline-link-item"
-                    >
-                      Grupo Adultos
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
           </li>
           <li
             className="nav-item"
-            onMouseEnter={() => handleHover("recursos", true)}
-            onMouseLeave={() => handleHover("recursos", false)}
+            onMouseEnter={() => debouncedHandleHover("recursos", true)}
+            onMouseLeave={() => debouncedHandleHover("recursos", false)}
           >
             <Link to="/via-crucis" className="nav-link underline-link">
               Recursos
@@ -384,8 +324,8 @@ const Navbar = () => {
           </li>
           <li
             className="nav-item"
-            onMouseEnter={() => handleHover("galeria", true)}
-            onMouseLeave={() => handleHover("galeria", false)}
+            onMouseEnter={() => debouncedHandleHover("galeria", true)}
+            onMouseLeave={() => debouncedHandleHover("galeria", false)}
           >
             <Link to="/fotos" className="nav-link underline-link">
               Galería
@@ -416,8 +356,8 @@ const Navbar = () => {
           </li>
           <li
             className="nav-item"
-            onMouseEnter={() => handleHover("donaciones", true)}
-            onMouseLeave={() => handleHover("donaciones", false)}
+            onMouseEnter={() => debouncedHandleHover("donaciones", true)}
+            onMouseLeave={() => debouncedHandleHover("donaciones", false)}
           >
             <Link to="/donaciones" className="nav-link underline-link">
               Donaciones

@@ -17,6 +17,7 @@ import JudasTadeo from './components/JudasTadeo';
 import Niños from './components/Niños';
 import Jovenes from './components/Jovenes';
 import Adultos from './components/Adultos';
+import Catequesis from './components/Catequesis';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="niños" element={<Niños />} />
           <Route path="jovenes" element={<Jovenes />} />
           <Route path="adultos" element={<Adultos />} />
+          <Route path="catequesis" element={<Catequesis />} />
         </Routes>
         <Footer />
       </BrowserRouter>

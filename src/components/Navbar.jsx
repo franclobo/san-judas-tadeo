@@ -55,7 +55,7 @@ const Navbar = () => {
    }
  };
 
-  const debouncedHandleHover = debounce(handleHover, 60);
+  const debouncedHandleHover = debounce(handleHover, 100);
 
   return (
     <header

@@ -2,17 +2,11 @@ import React from 'react';
 import Accordion from "react-bootstrap/Accordion";
 import CatequesisFoto from '../assets/images/catequesis.jpg';
 import Iniciacion from '../assets/images/iniciacion.webp';
-import IniciacionBook from '../assets/libros/Iniciacion.pdf';
 import PrimeroDeComunion from '../assets/images/primero-de-comunion.webp';
-import Reconcialiacion from '../assets/libros/reconciliacion.pdf';
 import SegundoDeComunion from '../assets/images/segundo-de-comunion.webp';
-import Comunion from '../assets/libros/comunion.pdf';
 import AnioBiblico from '../assets/images/anio-biblico.webp';
-import AnioBiblicoBook from '../assets/libros/anio-biblico.pdf';
 import PrimeroDeConfirmacion from '../assets/images/primero-de-confirmacion.webp';
-import PrimeroDeConfirmacionBook from '../assets/libros/primero-de-confirmacion.pdf';
 import SegundoDeConfirmacion from '../assets/images/segundo-de-confirmacion.webp';
-import SegundoDeConfirmacionBook from '../assets/libros/segundo-de-confirmacion.pdf';
 
 function Catequesis() {
   return (
@@ -22,13 +16,13 @@ function Catequesis() {
         alt="Catequesis"
         style={{ width: "100%", height: "500px", marginBottom: "20px" }}
       />
-      <Accordion defaultActiveKey="0" className='accordion'>
+      <Accordion defaultActiveKey="0" className="accordion">
         <Accordion.Item eventKey="1">
           <Accordion.Header>Iniciación</Accordion.Header>
           <Accordion.Body className="body">
             <div className="image-book">
               <a
-                href={IniciacionBook}
+                href="https://drive.google.com/file/d/1-b6AU77UYpBF9mOMyOJ4zh7Bvncw6Yws/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
@@ -52,7 +46,7 @@ function Catequesis() {
           <Accordion.Body className="body">
             <div className="image-book">
               <a
-                href={Reconcialiacion}
+                href="https://drive.google.com/file/d/162scpgPi5GqQmhLfQbqby2yUmb4gxd1Q/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
@@ -80,7 +74,7 @@ function Catequesis() {
           <Accordion.Body className="body">
             <div className="image-book">
               <a
-                href={Comunion}
+                href="https://drive.google.com/file/d/1TNgYAzj6hj22N2GrFhglxu0V4LSV9JH4/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
@@ -108,7 +102,7 @@ function Catequesis() {
           <Accordion.Body className="body">
             <div className="image-book">
               <a
-                href={AnioBiblicoBook}
+                href="https://drive.google.com/file/d/1IArt146IvuKf3zag7UQd03UY50RhXocn/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
@@ -132,7 +126,7 @@ function Catequesis() {
           <Accordion.Body className="body">
             <div className="image-book">
               <a
-                href={PrimeroDeConfirmacionBook}
+                href="https://drive.google.com/file/d/1nRWsH6Z9GOiTIgE-95_o1_4fE9gkBz59/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
@@ -160,7 +154,7 @@ function Catequesis() {
           <Accordion.Body className="body">
             <div className="image-book">
               <a
-                href={SegundoDeConfirmacionBook}
+                href="https://drive.google.com/file/d/1EpDg_fE3E4AgMg20jeKi8MhQwLvT8A_-/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 download

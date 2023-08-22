@@ -6,7 +6,7 @@ function Horarios() {
     <div>
       <img src={Misa} alt="Misa" style={{ width: '100%', height: '500px', marginBottom: '20px' }} />
       <article className="info__article">
-        <h2 className="info__title">Misas Dominicales</h2>
+        <h2 className="info__title">Horario de Misas</h2>
         <table className="table table-striped table-bordered table-hover">
           <thead className="info__thead">
             <tr>

@@ -1,5 +1,5 @@
 import React from 'react';
-import UnderConstruction from "../assets/icons/Under-Construction-Sign.png";
+import UnderConstruction from "../../assets/icons/Under-Construction-Sign.png";
 
 function Administracion() {
   return (

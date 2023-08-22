@@ -103,7 +103,7 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
-                      to="/administaracion"
+                      to="/administracion"
                       className="dropdown-link underline-link-item"
                     >
                       Administración
@@ -111,7 +111,7 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
-                      to="/templo"
+                      to="/ambientes-del-templo"
                       className="dropdown-link underline-link-item"
                     >
                       Ambientes del templo
@@ -119,7 +119,7 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
-                      to="/judas-tadeo"
+                      to="/san-judas-tadeo"
                       className="dropdown-link underline-link-item"
                     >
                       Imagen de San Judas Tadeo
@@ -231,7 +231,7 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
-                      to="/capilla"
+                      to="/capillas"
                       className="dropdown-link underline-link-item"
                     >
                       Capillas
@@ -239,7 +239,7 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
-                      to="/misas"
+                      to="/santa-misa"
                       className="dropdown-link underline-link-item"
                     >
                       Santa Misa
@@ -271,7 +271,7 @@ const Navbar = () => {
             onMouseEnter={() => debouncedHandleHover("recursos", true)}
             onMouseLeave={() => debouncedHandleHover("recursos", false)}
           >
-            <Link to="/via-crucis" className="nav-link underline-link">
+            <Link to="/rosario" className="nav-link underline-link">
               Recursos
             </Link>
             {isDropdownOpen.recursos && (
@@ -296,7 +296,7 @@ const Navbar = () => {
                   </li>
                   <li className="dropdown-item">
                     <Link
-                      to="/lecturas"
+                      to="/pan-de-la-palabra"
                       className="dropdown-link underline-link-item"
                     >
                       Pan de la Palabra

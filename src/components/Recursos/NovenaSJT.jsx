@@ -1,7 +1,7 @@
 import React from 'react';
-import UnderConstruction from "../assets/icons/Under-Construction-Sign.png";
+import UnderConstruction from "../../assets/icons/Under-Construction-Sign.png";
 
-function Historia() {
+function NovenaSJT() {
   return (
     <div>
       <img src={UnderConstruction} alt="En construcción" />
@@ -9,4 +9,4 @@ function Historia() {
   )
 }
 
-export default Historia
+export default NovenaSJT

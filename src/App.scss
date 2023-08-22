@@ -492,3 +492,73 @@
     height: 325px;
   }
 }
+
+/*-------Historia-------*/
+
+.title {
+  padding: 100px 0 0 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.paragraph {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px;
+}
+
+/*---Imagen San Judas Tadeo---*/
+
+.imagensanjudastadeo {
+  padding: 100px 0 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  .sanjudastadeo {
+    justify-self: center;
+  }
+  .simbolos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 60px 0 0;
+    text-align: justify;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+/*----Bautismo----*/
+
+.bautismo {
+  padding: 100px 0 30px 0;
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    h1 {
+      text-align: center;
+    }
+  }
+  .texto {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px;
+  }
+  .cita{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 30px;
+    padding-left: 100px;
+  }
+}

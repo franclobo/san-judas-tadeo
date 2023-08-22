@@ -1,7 +1,7 @@
 import React from 'react';
-import UnderConstruction from "../assets/icons/Under-Construction-Sign.png";
+import UnderConstruction from "../../assets/icons/Under-Construction-Sign.png";
 
-function Niños() {
+function Adultos() {
   return (
     <div>
       <img src={UnderConstruction} alt="En construcción" />
@@ -9,4 +9,4 @@ function Niños() {
   )
 }
 
-export default Niños
+export default Adultos
